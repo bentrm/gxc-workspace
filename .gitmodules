@@ -8,7 +8,7 @@
 [submodule "packages/deft"]
 	path = packages/deft
 	url = https://github.com/bentrm/DeftJS.git
-	branch = merge
+	branch = master
 [submodule "packages/GXC"]
 	path = packages/GXC
 	url = https://github.com/OpenInfRA/GXC.git
