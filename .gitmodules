@@ -1,10 +1,12 @@
 [submodule "ext"]
 	path = ext
 	url = https://github.com/bentrm/extjs.git
+	branch = extjs5
 [submodule "packages/GeoExt"]
 	path = packages/GeoExt
 	url = https://github.com/bentrm/geoext2.git
-	branch = local
+	branch = master
 [submodule "packages/GXC"]
 	path = packages/GXC
-	url = https://github.com/OpenInfRA/GXC.git
+	url = https://github.com/bentrm/GXC.git
+	branch = ext5
