@@ -5,10 +5,6 @@
 	path = packages/GeoExt
 	url = https://github.com/bentrm/geoext2.git
 	branch = local
-[submodule "packages/deft"]
-	path = packages/deft
-	url = https://github.com/bentrm/DeftJS.git
-	branch = master
 [submodule "packages/GXC"]
 	path = packages/GXC
 	url = https://github.com/OpenInfRA/GXC.git
