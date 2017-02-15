@@ -1,0 +1,6 @@
+node_modules/
+build/
+docs/
+
+examples/*/sass/example/bootstrap.js
+examples/*/bootstrap.*

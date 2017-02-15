@@ -1,0 +1,66 @@
+{
+    "name": "GXC",
+    "type": "code",
+    "creator": "HTW Dresden",
+    "summary": "GeoExt 2 Client components",
+    "detailedDescription": "An ExtJS package providing client components based on the GeoExt 2 library to rapidly build GIS applications.",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "slicer": {
+        "js": [
+            {
+                "path": "${package.dir}/sass/example/custom.js",
+                "isWidgetManifest": true
+            }
+        ]
+    },
+    "js": [
+        {
+            "path": "//cdnjs.cloudflare.com/ajax/libs/q.js/1.2.0/q.min.js",
+            "remote": true
+        },
+        {
+            "path": "//cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js",
+            "remote": true
+        },
+        {
+            "path": "//cdnjs.cloudflare.com/ajax/libs/proj4js/1.1.0/proj4js-combined.min.js",
+            "remote": true
+        },
+        {
+            "path": "//cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js",
+            "remote": true
+        },
+        {
+            "path": "${package.dir}/resources/script/DynamicMeasure.js"
+        }
+    ],
+    "css": [
+        {
+            "path": "//cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/theme/default/style.css",
+            "remote": true
+        }
+    ],
+    "output": "${package.dir}/build",
+    "local": true,
+    "requires": [
+        "deft",
+        "GeoExt"
+    ],
+    "scripts": {
+        "test": "node_modules/mocha-phantomjs/bin/mocha-phantomjs test/index.html"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "GeoExt": "bentrm/geoext2.git#sass",
+        "DeftJS": "bentrm/DeftJS#merge",
+        "mocha": "*",
+        "chai": "*",
+        "chai-as-promised": "*",
+        "sinon": "*",
+        "sinon-chai": "*",
+        "mocha-phantomjs": "*"
+    }
+}
