@@ -1,31 +1,43 @@
 # Init ExtJS 4 workspace with required packages
 
-This creates an Sencha Cmd workspace with all required packages.
+This inits an ExtJS workspace including an example GXC application that you
+can use as a starting point for customizations.
 
+Only things needed to run the application are
+
+* Git
+* [Sencha Cmd](https://www.sencha.com/products/extjs/cmd-download/)
+
+Clone the repo by doing:
 ```
-$ git clone --recursive https://github.com/bentrm/gxc-workspace.git
-$ cd gxc-workspace
+$ git clone https://github.com/bentrm/gxc-workspace.git
 ```
 
 # Start GXC Full demo with Sencha Cmd tool
-
 ```
-$ cd packages/GXC/examples/GXCFull
+$ cd gis
 $ sencha app watch
 ```
 
 A development server will start on port 1841 und should present you with the
 demo application.
 
-# Contribute bug fixes and features to GXC
+# Sidenotes
 
-The packages cloned into the `packages/` sub directory are Git repositories aswell.
-To contribute changes to GXC you can work with this workspace right away.
+Required packages are included with this repository as subtrees as following:
 
 ```
-$ cd packages/GXC
-$ git checkout master     # attach to actual master state of remote branch
-$ git checkout -b feature # checkout new branch "feature" to work on
+* ExtJS 4.2.1
+	* path = ext
+	* url = https://github.com/bjornharrtell/extjs.git
+* GeoExt 2
+	* path = packages/GeoExt
+	* url = https://github.com/bentrm/geoext2.git
+	* branch = local
+* DeftJS
+	* path = packages/deft
+	* url = https://github.com/bentrm/DeftJS.git
+	* branch = master
 ```
 
-From here on, you can commit to your branch and add features.
+This is of no concern as long as no changes to theses paths are made.
