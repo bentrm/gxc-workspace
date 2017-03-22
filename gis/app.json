@@ -1,0 +1,11 @@
+{
+    "name": "GIS",
+
+    "requires": [
+        "GXC"
+    ],
+
+    "resources": [],
+
+    "id": "2ce62674-976f-434c-9757-c70663336f0c"
+}
